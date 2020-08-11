@@ -20,7 +20,7 @@ def get_japanese_emoticon(file, emoji)
       return value[:japanese]
     end
   end
-  "Not a valid emoji"
+  "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(file, emoji)
@@ -30,5 +30,5 @@ def get_english_meaning(file, emoji)
       return value[:english]
     end
   end
-  "Not a valid emoji"
+  "Sorry, that emoticon was not found"
 end

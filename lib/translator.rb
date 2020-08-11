@@ -24,5 +24,11 @@ def get_japanese_emoticon(file, emoji)
 end
 
 def get_english_meaning
-  # code goes here
+  translator = load_library(file)
+  translator.each do |key, value|
+    if value[:japanese] == emoji
+      return value[:english]
+    end
+  end
+  "Not a valid emoji"
 end
